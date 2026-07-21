@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FBS Guard — интернет-магазин и расчёт логистики</title>
+  <meta name="description" content="Демонстрационная FBS-платформа: интернет-магазин, автоматический расчёт доставки, маржинальности и логистических рисков." />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="FBS Guard"><span>FG</span>FBS Guard</a>
+    <nav><a href="#catalog">Витрина</a><a href="#calculator">Калькулятор</a><a href="#control">Контроль</a></nav>
+    <a class="nav-cta" href="#calculator">Рассчитать заказ <b>↗</b></a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> FBS-инфраструктура для e-commerce</div>
+        <h1>Ваш склад.<br><em>Ваши правила.</em><br>Никаких простоев.</h1>
+        <p>Запускайте собственную витрину, считайте доставку и прибыль до оформления заказа, распределяйте остатки между складами — в одном интерфейсе.</p>
+        <div class="hero-actions"><a class="primary" href="#calculator">Посчитать логистику <span>→</span></a><a class="secondary" href="#control">Смотреть систему</a></div>
+        <div class="trust"><div><strong>12</strong><span>служб доставки</span></div><div><strong>82</strong><span>региона России</span></div><div><strong>99.9%</strong><span>доступность витрины</span></div></div>
+      </div>
+
+      <div class="hero-system" aria-label="Панель управления заказами">
+        <div class="window-top"><div class="window-brand"><span>FG</span><b>Control room</b></div><div class="status"><i></i>Все системы работают</div></div>
+        <div class="metric-grid">
+          <article><small>Заказы сегодня</small><strong>1 284</strong><span class="up">↗ 18.4%</span></article>
+          <article><small>В доставке</small><strong>746</strong><span>58% потока</span></article>
+          <article><small>Средний срок</small><strong>1.8 <sup>дня</sup></strong><span class="up">−0.4 дня</span></article>
+        </div>
+        <div class="route-card">
+          <div class="route-head"><div><small>Живая логистика</small><b>Москва → Санкт-Петербург</b></div><span>Сейчас</span></div>
+          <div class="route-line"><i></i><i></i><i></i></div>
+          <div class="route-labels"><span>Склад<br><b>Собрано</b></span><span>Сортировка<br><b>В пути</b></span><span>Клиент<br><b>Завтра</b></span></div>
+        </div>
+        <div class="orders">
+          <div class="orders-title"><b>Последние заказы</b><span>Все заказы →</span></div>
+          <div class="order"><span class="product-dot orange"></span><div><b>#FG-2841</b><small>Кофемашина Aero</small></div><strong>28 990 ₽</strong><em>Собран</em></div>
+          <div class="order"><span class="product-dot blue"></span><div><b>#FG-2840</b><small>Наушники Flow Pro</small></div><strong>14 490 ₽</strong><em>В пути</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker"><div>СОБСТВЕННАЯ ВИТРИНА <i>✦</i> FBS-КАЛЬКУЛЯТОР <i>✦</i> ОСТАТКИ В РЕАЛЬНОМ ВРЕМЕНИ <i>✦</i> ЮНИТ-ЭКОНОМИКА <i>✦</i> ДОСТАВКА ПО РОССИИ <i>✦</i></div></section>
+
+    <section id="catalog" class="catalog shell section">
+      <div class="section-head"><div><span>01 / Витрина</span><h2>Магазин, который<br>продаёт без маркетплейса</h2></div><p>Готовая демонстрационная витрина с корзиной, оплатой, остатками и автоматическим подбором доставки.</p></div>
+      <div class="filters"><button class="active">Новинки</button><button>Электроника</button><button>Для дома</button><button>Аксессуары</button><span>24 товара</span></div>
+      <div class="products">
+        <article class="product-card"><div class="product-image"><span>−15%</span><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Кроссовки Orbit" /></div><small>СПОРТ</small><h3>Кроссовки Orbit Run</h3><div class="price"><strong>10 990 ₽</strong><s>12 990 ₽</s><button data-add>+</button></div></article>
+        <article class="product-card featured"><div class="product-image"><span>ХИТ</span><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Наушники Flow Pro" /></div><small>АУДИО</small><h3>Наушники Flow Pro</h3><div class="price"><strong>14 490 ₽</strong><button data-add>+</button></div></article>
+        <article class="product-card"><div class="product-image"><span>NEW</span><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Часы Mono X" /></div><small>АКСЕССУАРЫ</small><h3>Часы Mono X</h3><div class="price"><strong>18 900 ₽</strong><button data-add>+</button></div></article>
+      </div>
+    </section>
+
+    <section id="calculator" class="calculator-wrap section">
+      <div class="calculator shell">
+        <div class="calc-copy"><span>02 / Умная логистика</span><h2>Цена доставки<br>до клика «Купить»</h2><p>Калькулятор учитывает вес, габариты, регион, срочность и стоимость товара. Покупатель сразу видит честную цену, бизнес — маржу.</p><ul><li><b>01</b> Объёмный и фактический вес</li><li><b>02</b> Тарифные зоны и срочность</li><li><b>03</b> Комиссия, упаковка и возвраты</li></ul></div>
+        <form class="calc-panel" id="delivery-form">
+          <div class="calc-title"><div><small>FBS CALCULATOR</small><h3>Рассчитать заказ</h3></div><span>Онлайн</span></div>
+          <div class="field-row"><label>Откуда<select id="origin"><option value="1">Москва</option><option value="1.1">Санкт-Петербург</option><option value="1.25">Казань</option><option value="1.35">Екатеринбург</option></select></label><label>Куда<select id="zone"><option value="1">Москва и МО</option><option value="1.35">Центральная Россия</option><option value="1.7">Урал и Поволжье</option><option value="2.15">Сибирь и Дальний Восток</option></select></label></div>
+          <div class="field-row triple"><label>Вес, кг<input id="weight" type="number" min="0.1" step="0.1" value="2.4" /></label><label>Длина, см<input id="length" type="number" min="1" value="38" /></label><label>Ширина, см<input id="width" type="number" min="1" value="28" /></label></div>
+          <div class="field-row"><label>Высота, см<input id="height" type="number" min="1" value="18" /></label><label>Стоимость товара, ₽<input id="value" type="number" min="100" value="14990" /></label></div>
+          <label>Служба доставки<div class="carrier-switch"><button type="button" class="carrier active" data-rate="1" data-days="2">СДЭК</button><button type="button" class="carrier" data-rate="0.88" data-days="3">Почта</button><button type="button" class="carrier" data-rate="1.18" data-days="1">Экспресс</button></div></label>
+          <div class="result"><div><small>Доставка</small><strong id="shipping">690 ₽</strong></div><div><small>Срок</small><strong id="eta">1–2 дня</strong></div><div><small>Маржа после логистики</small><strong class="green" id="margin">5 812 ₽</strong></div></div>
+          <div class="profit"><span>Рентабельность заказа</span><b id="profitability">38.8%</b><div><i id="profit-bar"></i></div></div>
+          <button class="calculate" type="submit">Пересчитать доставку <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="control" class="control shell section">
+      <div class="section-head"><div><span>03 / Контроль рисков</span><h2>Один сбой не<br>останавливает продажи</h2></div><p>Разносите остатки по собственным точкам, отслеживайте SLA и заранее переключайте поток заказов.</p></div>
+      <div class="control-grid">
+        <article class="map-card"><div class="card-head"><div><small>ГЕОГРАФИЯ ОСТАТКОВ</small><h3>Распределение складов</h3></div><span>Обновлено сейчас</span></div><div class="map"><div class="map-lines"></div><i class="pin moscow"><b>4 821</b><small>Москва</small></i><i class="pin spb"><b>2 304</b><small>СПб</small></i><i class="pin kazan"><b>1 148</b><small>Казань</small></i><i class="pin ekb"><b>936</b><small>Екатеринбург</small></i></div></article>
+        <article class="risk-card"><div class="card-head"><div><small>РИСК-МОНИТОР</small><h3>Устойчивость сети</h3></div><b class="score">92</b></div><div class="risk-item"><span><i class="good"></i>Москва · Север</span><b>Стабильно</b></div><div class="risk-item"><span><i class="warn"></i>СПб · Парнас</span><b>Нагрузка 78%</b></div><div class="risk-item"><span><i class="good"></i>Казань · Центр</span><b>Стабильно</b></div><div class="recommend"><small>РЕКОМЕНДАЦИЯ AI</small><p>Перенаправить 14% новых заказов из СПб в московский узел на ближайшие 6 часов.</p><button>Применить маршрут →</button></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell"><a class="brand" href="#top"><span>FG</span>FBS Guard</a><p>Демонстрационный проект MoviBobby · 2026</p><a href="#calculator">Рассчитать доставку ↑</a></div></footer>
+  <div class="toast" id="toast">Товар добавлен в демо-корзину</div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
